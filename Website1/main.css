@@ -1,0 +1,40 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #000000;
+    color: rgb(255, 254, 254)
+}
+
+a {
+    color: blue;
+}
+a:visited{
+    color: rgb(31, 212, 71);
+}
+a:hover{
+    color: rgb(243, 243, 11);
+}
+h1 {
+    font-style: initial;
+}
+h2 {
+    font-size: larger;
+}
+h3 {
+    font-size: larger;
+}
+h4 {
+    font-size: larger;
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+}
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family:'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: o.5rem;
+}

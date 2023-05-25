@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Willy Laisa">
+    <meta name="description" content="This page contains all the things I am learning how to create as i learn HTML.">
+    <title>This is not my first webpage</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/gitdagray/html_course/main/02_lesson/html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">  
+
+   
+</head>
+<body>
+    <header>
+        <h1>What's good people🔊🔊😂😂</h1><!--
+            h1 is the first title and it is the largest by default   
+            There can only be 1 h1.. h2, h3  and so on are smaller as they go on
+            you can actually have several h2 headers and h3 all the way to....
+            <hr> indicates a line break
+            <br> indicates the next line in a <p> (paragraph)
+            &nbsp; means no breaking space.... 
+            &gt; and &lt; means less then and greater than
+            <abbr title="Cascading Style sheets">CSS</abbr>
+        -->
+        
+        <figure>
+            <img src="img/Mang'u.JPG" alt="Photo of students from Mang'u Highschool" title="I am the guy in the middle of the tallest guys" width="300" loading="lazy">
+            <figcaption>Prefect's retreat 2022</figcaption>
+        </figure>
+        <nav aria-label="Primary navigation">
+            <ul>
+                <li>
+                    <a href="#self_justification">Reasons for repeating</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+                <li>
+                    <a href="#cotact">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+
+        <h2>I did this in January!</h2>
+        <p>This is not my first webpage</p>
+        <ol>
+            <li> I wrote some code back in January</li>
+            <li> I actually just copied the code</li>
+            <li> I used resources from <abbr title="Mozilla Developer Network">
+                <!--
+                        <a> is used to reference to another html document 
+                    -->
+            <a href="https://developer.mozilla.org/">MDN</a></abbr></li>
+        </ol>
+        <!-- TODO List : Add more places
+        <em></em> means emphasis with default being italics
+        <strong></strong> is same as emphasis but is stronger with default being bold-->
+        <hr>
+        <article id="self_justification">
+            <h3>Why am I repeating this?</h3>
+            <ul>
+                <li><p>Because I <em>did not</em> understand.</p></li>
+
+                <li><p>Because the teacher was just teaching us how to copy and paste written code from Bootstrap</p></li>
+
+                <li><p>But again, what choice did she have?</p></li>
+
+                <li><p>She only had about <strong>10 hours</strong> to teach us everything about <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading style sheets">CSS</abbr> and Javascript</p></li>
+            </ul>
+        </article>
+        <hr>
+        <article id="vacation">
+            <h2>Things to do with vacation</h2>
+            <section>
+                <h4>Places I do not want to go to:</h4>
+                <dl>
+                    <!--
+                        <dt> means the descriptive title while<dd> means the descriptive details
+                        <dl> definitely means descriptive list
+                    -->
+                    <dt>North Pole</dt>
+                    <dd>I hear this is cold</dd>
+                    <dt>South Pole</dt>
+                    <dd>I hear this is also cold</dd>
+                    <dt>Mountain tops</dt>
+                    <dd>They are definitely also cold</dd>
+                </dl>
+            </section>
+            <hr>
+            <section>
+                <h4>Places I want to visit</h4>
+                <ul>
+                    <li>Sydney,Australia</li>
+                    <li>New York, USA</li>
+                    <li>Berlin, Germany</li>
+                    <li>Liverpool, Britain</li>
+                    <li>Geneva, Switzerland</li>
+                </ul>
+            </section>
+            <br>
+            
+            
+            <br><br><br><br><br><br><br><br><br><br>
+            <!--
+                do not use divs and spans for now.. But i will use them much later
+            -->
+            
+            <aside>
+                <details>
+                    <summary>
+                        Guess the <mark> number of hours I code per day</mark>
+                    </summary>
+                    <table>
+                        <caption>
+                            My daily schedule
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Morning</th>
+                                <td>
+                                    <time datetime="08:00">8am</time> -
+                                    <time datetime="11:00">11am</time>
+                                </td>
+                                <td>Write code</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Break</th>
+                                <td>
+                                    <time datetime="11:00">11am</time> -
+                                    <time datetime="12:00">12pm</time>
+                                </td>
+                                <td>Eat lunch</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Afternoon</th>
+                                <td>
+                                    <time datetime="12:00">12pm</time> -
+                                    <time datetime="17:00">5pm</time>
+                                </td>
+                                <td>Study for other courses</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">
+                                    All other time
+                                </td>
+                                <td>Free Time</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And that's what i do every day 5 days a week.. Just eat, sleep, code and recharge.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <p>I start at <time datetime="08:00">8 am</time> and code till late in the evening</p>
+                </details>
+            </aside>
+        </article>
+        <article id="contact">
+            <br><br><br><br><br>
+            <hr>
+            <h2>Contact me</h2>
+            <p>I'd really like to hear from you</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="e.g Judy" autocomplete="on" required autofocus>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="e.g Pearson" autocomplete="on" required >
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="🤫🤫do not share" required >
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="0123456789" pattern="[0-9]{10}" required >
+                </p>
+                <p>
+                    <label for="decade">Favorite decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980" >
+                </p>
+                <p>
+                    <label for="coffee">Favorite coffee</label>
+                    <select name="coffee" id="coffee" multiple size="5">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">
+                                Iced Coffee
+                            </option>
+                        </optgroup>
+                        <optgroup label="Espressos">
+                            <option value="latte" selected>
+                                Latte
+                            </option>
+                            <option value="cappuccino">
+                                Cappuccino
+                            </option>
+                            <option value="americano">
+                                Americano
+                            </option>
+                        </optgroup>
+                        <option value="other">
+                            Other
+                        </option>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee">
+                        <option value="latte">
+                        <option value="espresso">
+                        <option value="americano">
+                        <option value="other">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        What is your favorite food?
+                    </legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="another" value="another">
+                        <label for="another">Other</label>
+                    </p>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>
+                        Do you have pets?
+                    </legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+    <footer>
+        &lt;&lt;&lt;<a href="iphone.html" target="_blank">Iphone 14 user</a>  &gt;&gt;&gt;
+        <ul>
+            <li>
+                <a href="about.html">Willy Laisa</a>
+            </li>
+            <li>
+                Download an <a href="html5.png" download>HTML5 Favicon</a>
+            </li>
+            <li>
+                Contact me at <a href="mailto:interviews@strathmore.edu">Gmail</a> 
+            </li>
+            <li>
+                Dial <a href="tel:+254720169849">my phone number</a>
+            </li>
+            <li>
+                Open <a href="https://www.google.com/" target="_blank">Google</a> in a new tab
+            </li>
+        </ul>
+        <p>
+            <a href="/">Back to home</a>
+        </p>
+        <!--
+            the link above called about.html is a relative reference since it redirects to a html document or item such as picture in the same folder
+            an absolute reference is one which redirects you to another html document from the web  
+            internal reference
+        -->
+    </footer>   
+</body>
+</html>
